@@ -1,0 +1,22 @@
+﻿@model MvcViewData.Models.info
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>panel</title>
+</head>
+<body>
+    <div> 
+        @Model.personname - @Model.personid<br />
+        <ul>
+            @foreach (var persons in Model.persons)
+            {
+                <li>@persons</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
